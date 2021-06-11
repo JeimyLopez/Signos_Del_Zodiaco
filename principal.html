@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Principal</title>
+</head>
+<body onload="onMyLoad()">
+	<div class="menulateral">
+		<form action="" id="containerBotones">
+			<a href="index.html"><img class="casa" src="imagenes/home.svg"></a>
+			<button class="boton2" onclick="queSignoEres(event)">¿QUE SIGNO ERES?</button> 
+			<button class="boton2" onclick="comoEsMiSigno(event)">¿COMO ES MI SIGNO?</button>
+			<button class="boton2" onclick="estaremosJuntos(event)">¿ESTAREMOS JUNTOS?</button>
+		</form>   
+	</div>     
+	<div class="menuDerecho">
+		<div class="titulo"><h1>Los signos del zodiaco</h1>
+			<div class="caja">
+				<br><p>Los signos del zodiaco han servido por 
+				generaciones,para que sepas si tu y tu pareja estan destinados a estar juntos. </p>
+				<br><p>Aqui encontraras todo lo necesario
+				para informarte acerca de ello.</p>
+		    </div>
+		</div>
+    <div class="contenedorSignos">
+    <div class="queSignoEres">
+    	<h1>¿Que signo soy?</h1>
+    <form class="selectores">
+    <select name="signos" id="selectDia">
+		<option value="">Dia</option>
+	</select>
+	<select name="signos1" id="selectMes">
+		<option value="">Mes</option>
+	</select>
+	<button class="suSigno" type="button" onclick="infoSigno()">Su signo es:</button>
+	<div class="resultado">
+		<p><h3 id="result"></h3></p>
+	</div>
+	</form>
+    </div>
+    <div class="comoEsMiSigno">
+    <h1>¿Como es mi signo?</h1>
+    <br>
+	<div class="padre">
+		<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="aries()">Aries</button>
+    </div>
+	</div>
+	</div>
+	<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="tauro()">Tauro</button>
+	</div>
+	</div>
+	</div>
+	<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="geminis()">Geminis</button>
+		</div>
+		</div>
+		</div>
+	<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="cancer()">Cancer</button>
+		</div>
+		</div>
+		</div>
+	<div class="col-12 col-lg-3">
+	    <div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+ 	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="leo()">Leo</button>
+		</div>
+		</div>
+		</div>
+	<div class="col-12 col-lg-3">
+	    <div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="virgo()">Virgo</button>
+	    </div>
+		</div>
+		</div>
+	<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="libra()">Libra</button>
+		</div>
+		</div>
+		</div>
+	<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="escorpio()">Escorpio</button>
+        </div>
+		</div>
+		</div>
+	<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="sagitario()">Sagitario</button>
+		</div>
+		</div>
+		</div>
+	<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+	    <img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="capricornio()">Capricornio</button>
+		</div>
+		</div>
+		</div>
+	<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="acuario()">Acuario</button>
+		</div>
+		</div>
+		</div>
+	<div class="col-12 col-lg-3">
+		<div class="card bg-light">
+		<div class="card-body">
+		<div class="d-flex">
+		<img src="imagenes/card.png">
+	    </div>
+	<br>
+	<button type="button" class="botn"  data-toggle="modal" data-target="#myModal" onclick="piscis()">Piscis</button>
+		</div>
+		</div>
+		</div>			.
+	<br>			
+	</div>	    
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	<span aria-hidden="true">&times;</span></button>
+		<h4 id="tituloCartas"></h4>
+	</div>
+	<div class="modal-body">
+		<p id="textoSigno"></p>
+	</div>
+	</div>
+	</div>
+    </div>
+    </div>
+    <div class="estaremosJuntos">
+    	<h1>¿Estaremos Juntos?</h1>
+    <form class="selectorDos">
+    	<select name="signos" id="primerSigno">
+    		<option value="">Tu signo</option>
+		</select>
+		<select name="signos2" id="segundoSigno">
+			<option value="">Su signo</option>
+		</select>
+	<div class="botonCorazon">
+	<img src="imagenes/heart.svg"  type="button" onclick="compatibility()">
+	</div>
+	<div class="comparacion">
+		<h3 id="juntos"></h3>
+	</div>
+    </form>
+    </div>
+	<script src="js/funciones.js"></script>
+	<script src="js/opcion1.js"></script>
+</body>
+</html>

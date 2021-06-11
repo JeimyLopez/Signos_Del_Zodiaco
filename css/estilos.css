@@ -1,0 +1,39 @@
+body,html{
+	margin:4.0%;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.img1 {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1%;
+}
+.img2 {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 8%;
+}
+.img3 {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5%;
+}
+.boton{
+	background: #7704E9;
+	font-size: 30px;
+	border-radius: 12px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 100px;
+	padding-bottom: 20px;
+	height: 60px;
+	width: 18%;
+	font-weight: bold;
+}
+.boton a{
+	text-decoration: none;
+	color: white;
+	font-family:'spicy Rice';
+	src:url(../fuentes/Spicy-Curry-Rice__G.woff);
+}

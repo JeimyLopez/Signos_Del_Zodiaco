@@ -1,0 +1,286 @@
+body, html{
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+  font-family: "comic";
+  src:url(../fuentes/ComicBoys.woff);
+}
+
+@font-face{
+  font-family: "spicy rice";
+  src:url(../fuentes/Spicy-Curry-Rice__G.woff);
+}
+
+@font-face{
+  font-family: "melanie";
+  src:url(../fuentes/MelanieRoselynRegular.woff);
+}
+.menulateral {
+  display: flex;
+  width: 25%;
+  height: 100vh;
+  background-image: url(../imagenes/paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+  position: fixed;
+  align-items:center;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#containerBotones {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  height: max-content;
+  align-items: center;  
+}
+h1{
+  display: flex;
+  color: white;
+  font-family:'spicy rice';
+  width: 200%; 
+  font-size: 40px;
+  margin-top: 75px;
+  justify-content: center;
+}
+.menuDerecho {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 79.5%;
+  height: auto;
+  color: white;
+  position: relative;
+  left: 20.5%;
+  background-image: url("../imagenes/joshua-earle-C6duwascOEA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.casa{ 
+  width: 50px;
+  height: 50px;
+  align-items: center;
+}
+.boton2{
+  background-color: #7704E9;
+  color: white;
+  font-family:'melanie';
+  font-size:20px;
+  border-radius: 10px;
+  height: 80px;
+  width: 150px;
+  border-color: #7704E9;
+  margin-top: 50px;
+}
+  .caja{
+  width: 56%;
+  height: 70%;
+  margin-top: 70px;
+  border-radius: 15px;
+  background: rgba( 110, 4, 233, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  color: white;
+  font-family: 'comic';
+  font-size: 40px;
+  text-align: justify;
+}
+.titulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  background-image: url(../imagenes/joshua-earle-C6duwascOEA-unsplash.jpg);
+}
+.queSignoEres{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.queSignoEres, .comoEsMiSigno, .estaremosJuntos{
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../imagenes/jesse-collins-qIwFIwxl3CI-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  flex-direction: column;
+}
+.selectores{
+	margin-top: 45px;
+	margin-right: 40px;
+	color: black;
+}
+#selectDia{
+	padding-left: 20px;
+	width: 130px;
+	height:30px;
+	border-radius: 10px;
+	font-size: 30px;
+	font-family: 'comic';
+}
+#selectMes{
+	padding-left: 20px;
+	width: 130px;
+	height:30px;
+	border-radius: 10px;
+	font-size: 30px;
+	font-family: 'comic';
+}
+.suSigno{
+	width: 130px;
+	height:50px;
+	font-family: 'melanie';
+	font-size: 28px;
+	color: black;
+	font-weight: bold;
+	border-radius: 10px;
+	border:2px solid black;
+	padding-bottom: 8px;
+	opacity: 0.5;
+	transition:background-color 0.2s ease-out, color 0.2s ease-out; 
+}
+.resultado{
+	width: 500px;
+	height: 300px;
+	margin-top: 40px;
+	border: 2px solid #7704E9;
+	border-radius: 15px;
+	background: linear-gradient(to bottom right, #E46464, #C4C4C4);opacity: 0.6; 
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+#result{
+	font-size: 110px;
+	padding-top: 55px;
+	font-family: 'comic';
+	color: black;
+}
+.comoEsMiSigno{
+	flex-direction: column;
+	align-items: center;
+}
+.comoEsMiSigno h1{
+	color: white;
+	font-family: 'comic';
+	width: 95%;
+	margin-top: 80px;
+	font-size: 85px;
+	text-align: center;
+}
+.d-flex img {
+  width: 80px;
+  height: 130px;
+  margin-top: 20px;
+}
+
+.bg-light{
+  width:0px;
+  margin-left: 60px;
+  margin-right: 90px;
+}
+.card-body{
+    width: 0px;
+    white-space: 3px;
+    border-spacing:50px; 
+}
+.botn{
+	border: 1px solid black;
+	border-radius: 10px;
+	color: #7704E9;
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	font-size: 40px;
+	font-family: "melanie";
+}
+#tituloCartas{
+	color: black;
+	font-size: 90px;
+	font-family: "comic";
+}
+#textoSigno{
+	color: black;
+    font-size: 45px;
+    font-family: "comic";
+}
+#myModal {
+  background-image: url("../Imagenes/joshua-earle-C6duwascOEA-unsplash (4).jpg");
+  background-size: 100% 100%;
+}
+.modal-content {
+  border: 2px solid #7704E9;
+  border-radius: 15px;
+  background: linear-gradient(to bottom right, #E46464, #C4C4C4);
+  opacity: 0.6; /*transparecia*/
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+.estaremosJuntos{
+	flex-direction: column;
+	align-items: center;
+}
+.estaremosJuntos h1{
+	color: white;
+  font-family: 'Comic';
+  width: 95%; 
+  margin-top: 50px;
+  font-size: 85px;
+  text-align: center;
+}
+.botonCorazon img {
+  width: 70px;
+  height: 70px;
+}
+.selectorDos {
+  margin-top: 25px;
+  margin-right: 40px;
+  color: black;
+}
+#primerSigno {
+  padding-left: 20px;
+  width: 130px ;
+  height: 30px ;
+  border-radius: 10px;
+  font-size: 30px;
+    font-family: 'Comic';
+}
+
+#segundoSigno {
+  padding-left: 20px;
+  width: 130px ;
+  height: 30px ;
+  border-radius: 10px;
+  font-family: 'Comic';
+  font-size: 30px;
+}
+
+#juntos {
+  font-size: 45px;
+  padding-right: 5px ;
+  padding-left: 5px;
+  margin:0px;
+   font-family: 'Comic'; 
+  color: white;
+}
+.comparacion {
+  width: 900px;
+  height: 310px;
+  margin-top: 30px;
+  margin-left: 100px;
+  border: 2px solid #7704E9;
+  border-radius: 15px;
+  background: linear-gradient(to bottom right, #E46464, #C4C4C4);
+  opacity: 0.6; /*transparecia*/
+    transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
